@@ -4,6 +4,10 @@ const config = {
     output: {
       libraryExport: 'default'
     }
+  },
+
+  devServer: {
+    disableHostCheck: true
   }
 }
 

@@ -1,7 +1,7 @@
 <template>
   <div class="justify-content-between row">
     <nested-test class="col-8" v-model="elements" />
-    <raw-displayer class="col-4" :title="'Vuex Store'" :value="elements" />
+    <raw-displayer class="col-4" title="Vuex Store" :value="elements" />
   </div>
 </template>
 
