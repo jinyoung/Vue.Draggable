@@ -2,7 +2,7 @@
   <draggable class="dragArea" tag="ul" :list="tasks" :group="{ name: 'g1' }">
     <li v-for="el in tasks" :key="el.name">
       <p>{{ el.name }}</p>
-      <nested-draggable :tasks="el.tasks" />
+      <nested-draggable :tasks="el.tasks" v-if="el.tasks"/>
     </li>
   </draggable>
 </template>
