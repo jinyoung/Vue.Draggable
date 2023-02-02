@@ -18,7 +18,7 @@
     <div class="col-3">
       <h3>Draggable 2</h3>
 
-        <nested-draggable :tasks="list2" />
+        <nested-task :tasks="list2" />
 
       <!-- <draggable
         class="dragArea list-group"
@@ -42,7 +42,7 @@
 
 <script>
 import draggable from "@/vuedraggable";
-import nestedDraggable from "./infra/nested";
+import nestedTask from "./infra/nested-task";
 
 let idGlobal = 1;
 export default {
@@ -51,7 +51,7 @@ export default {
   order: 3,
   components: {
     draggable,
-    nestedDraggable
+    nestedTask
   },
   data() {
     return {
